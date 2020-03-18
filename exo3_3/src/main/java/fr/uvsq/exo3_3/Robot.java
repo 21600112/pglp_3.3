@@ -1,8 +1,8 @@
 package fr.uvsq.exo3_3;
 
 public class Robot {
-	private Position position;
-	private Direction direction;
+	protected Position position;
+	protected Direction direction;
 	
 	public Robot(Position pPosition, Direction pDirection)
 	{

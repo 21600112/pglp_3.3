@@ -8,6 +8,16 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Position p1 = new Position(10,10);
+        Position p2 = new Position(20,20);
+        
+        Robot r1 = new Robot(p1,Direction.NORD);      
+        RobotStatic r2 = new RobotStatic(p2,Direction.SUD);
+        
+        System.out.println(r1.position.toString());
+        
+        r1.avance();
+        System.out.println(r1.position.toString());
+        
     }
 }
